@@ -1,0 +1,43 @@
+<div style="margin: 10px; position: relative; height: 100%;">
+
+	<div id="chenn-myarea">
+		<button id="chenn-mybtn" class="btn btn--xl btn--fab"
+			ng-class="btnClass('m')"
+			ng-click="clickedBtn('m')">
+			{{btnText('m')}}
+		</button>
+	</div>
+
+	<!-- Top -->
+	<div style="position: absolute; top: 0px; left: 50%; margin-left: -30px;">
+		<button class="btn btn--xl btn--fab" ng-class="btnClass('t')" lx-ripple ng-click="clickedBtn('t')">
+			<i ng-show="!gameState.data.cons.t" class="mdi mdi-plus"></i>
+			<small ng-show="gameState.data.cons.t">{{btnText('t')}}</small>
+		</button>
+	</div>
+
+	<!-- Left -->
+	<div style="position: absolute; top: 50%; left: 0%; margin-top: -30px;">
+		<button class="btn btn--xl btn--fab" ng-class="btnClass('l')" lx-ripple ng-click="clickedBtn('l')">
+			<i ng-show="!gameState.data.cons.l" class="mdi mdi-plus"></i>
+			<small ng-show="gameState.data.cons.l">{{btnText('l')}}</small>
+		</button>
+	</div>
+
+	<!-- Right -->
+	<div style="position: absolute; top: 50%; right: 0%; margin-top: -30px;">
+		<button class="btn btn--xl btn--fab" ng-class="btnClass('r')" lx-ripple ng-click="clickedBtn('r')">
+			<i ng-show="!gameState.data.cons.r" class="mdi mdi-plus"></i>
+			<small ng-show="gameState.data.cons.r">{{btnText('r')}}</small>
+		</button>
+	</div>
+
+	<!-- Bottom -->
+	<div style="position: absolute; bottom: 0px; left: 50%; margin-left: -30px;">
+		<button class="btn btn--xl btn--fab" ng-class="btnClass('b')" lx-ripple ng-click="clickedBtn('b')">
+			<i ng-show="!gameState.data.cons.b" class="mdi mdi-plus"></i>
+			<small ng-show="gameState.data.cons.b">{{btnText('b')}}</small>
+		</button>
+	</div>
+
+</div>

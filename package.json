@@ -1,0 +1,51 @@
+{
+  "name": "chenn",
+  "version": "1.0.0",
+  "description": "Chenn",
+  "repository": "https://bitbucket.com/ivanseidel",
+  "README": "none",
+  "engines": {
+    "node": "0.10.38"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "make test",
+    "start": "ENV=development ./node_modules/.bin/nodemon start.server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "1.2.1",
+    "bcrypt": "0.8.3",
+    "body-parser": "1.13.1",
+    "cloudinary": "1.2.1",
+    "compression": "1.5.0",
+    "connect-flash": "0.1.1",
+    "connect-mongo": "0.8.1",
+    "cookie-parser": "1.3.5",
+    "cookie-session": "1.1.0",
+    "csurf": "1.8.3",
+    "express": "4.12.4",
+    "express-session": "1.11.3",
+    "fbgraph": "git+https://github.com/criso/fbgraph.git",
+    "forever": "0.14.1",
+    "lodash": "3.9.3",
+    "method-override": "2.3.3",
+    "mongoose": "4.0.6",
+    "mongoose-timestamp": "0.4.0",
+    "mongoose-user": "0.0.1",
+    "morgan": "1.6.0",
+    "nodemon": "latest",
+    "passport": "0.2.2",
+    "passport-facebook": "^2.0.0",
+    "passport-local": "1.0.0",
+    "request": "2.58.0",
+    "socket.io": "^1.3.6",
+    "winston": "1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest",
+    "supertest": "latest"
+  }
+}

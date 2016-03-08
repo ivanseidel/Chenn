@@ -1,0 +1,103 @@
+<html lang="en" ng-app="App">
+<head>
+	<title>Chenn</title>
+
+	<!-- <meta name="viewport" content="width=320, initial-scale=1"> -->
+
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic"> -->
+	
+	<!-- Vendor Styles -->
+	<link rel="stylesheet" href="/components/angular-material/angular-material.min.css">
+	<link rel="stylesheet" href="/components/lumx/dist/lumx.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+	<link rel="stylesheet" href="/components/mdi/css/materialdesignicons.css">
+
+	<!-- App Specific -->
+	<link rel="stylesheet" href="/styles/site.css">
+
+	<!-- <meta name="viewport" content="initial-scale=1" /> -->
+
+	<style type="text/css">
+	.link {
+        stroke: #2E2E2E;
+        stroke-width: 2px;
+    }
+
+    .node {
+        stroke: #fff;
+        stroke-width: 2px;
+    }
+    .textClass {
+        stroke: #323232;
+        font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        stroke-width: .5;
+        font-size: 14px;
+    }
+    </style>
+</head>
+
+<body layout="column" ng-controller="AppCtrl">
+
+	<md-toolbar class="md-primary" style="z-index: 3; background-color: #DB3C3E;">
+		<div class="eg-toolbar md-toolbar-tools md-toolbar-tools-bottom">
+
+			<md-icon md-svg-src="/images/cheen_yellow.svg"></md-icon>
+			<div class="docs-logotype" style="margin-left: 16px;">
+				{{gameState.data.message}}
+			</div>
+			
+			<span flex></span>
+
+			<div class="docs-logotype" ng-show="gameState.data.code">
+				<small>[{{gameState.data.name}}: #{{gameState.data.code | uppercase}}]</small>
+			</div>
+
+		</div>
+	</md-toolbar>
+
+	<div layout="column" flex id="content" ng-view class="fx-fade-left" style="height: 100%;">
+	</div>
+	<!-- <div style="">
+		a
+		<div data-ng-view id="content" class="animate-fade-up"></div>
+	</div> -->
+
+	<!-- <div layout="row" flex>
+		<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+
+	</md-sidenav>
+	 -->
+
+
+	<!-- build:js scripts/vendor.js -->
+	<script src="/components/underscore/underscore-min.js"></script>
+	<script src="/components/jquery/dist/jquery.min.js"></script>
+	<script src="/components/angular/angular.js"></script>
+	<script src="/components/angular-route/angular-route.min.js"></script>
+	<script src="/components/angular-touch/angular-touch.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js scripts/site-ui.js -->
+	<script src="/components/d3/d3.js"></script>
+
+	<script src="/components/angular-animate/angular-animate.min.js"></script>
+	<script src="/components/angular-resource/angular-resource.min.js"></script>
+	<script src="/components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="/components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+	<script src="/components/angular-material/angular-material.min.js"></script>
+	<script src="/components/angular-aria/angular-aria.min.js"></script>
+	<script src="/components/gsap/src/minified/TweenMax.min.js"></script>
+	<script src="/components/ngFx/dist/ngFx.min.js"></script>
+	<script src="/components/velocity/velocity.js"></script>
+	<script src="/components/lumx/dist/lumx.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js({.tmp,client}) scripts/participar.js -->
+	<script src="/app/controll.js"></script>
+	<!-- endbuild -->
+
+</body>
+</html>

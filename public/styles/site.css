@@ -1,0 +1,21 @@
+html, body {
+  overflow: hidden;
+}
+
+#chenn-myarea{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -80px;
+	margin-top: -80px;
+}
+
+#chenn-mybtn{
+	line-height: 1.5em;
+	height: 160px;
+	width: 160px;
+}
+
+#chenn-mybtn > small{
+	opacity: 0.4;
+}

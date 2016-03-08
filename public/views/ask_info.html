@@ -1,0 +1,25 @@
+<!-- <div layout="column" layout-fill style="padding-bottom: 32px; margin: 16px;"> -->
+  <!-- <md-whiteframe class="md-whiteframe-z1" layout layout-align="center center"> -->
+
+<md-subheader class="md-primary">Um pouco sobre você</md-subheader>
+
+<md-content layout-padding>
+		<md-input-container flex>
+      <label>Seu nome</label>
+      <input ng-model="gameState.name">
+    </md-input-container>
+
+    <div layout="row" layout-align="end">
+    
+	    <span flex></span>
+			<md-button class="md-raised md-primary" ng-disabled="!gameState.name || gameState.name.length < 2"
+				ng-click="initGame()">
+				Próximo
+			</md-button>
+
+		</div>
+
+</md-content layout-padding>
+
+  <!-- </md-whiteframe> -->
+<!-- </div> -->
