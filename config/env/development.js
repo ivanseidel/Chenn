@@ -7,11 +7,11 @@ module.exports = {
 	domain: domain,
 
 	session: {
-		secret: 'w@i@s@e@p@i@x',
+		secret: 'chenn',
 	},
-	
-	db: env.MONGODB_URL || 'mongodb://localhost:27017/wisepix_development',
-	
+
+	db: env.MONGODB_URL,
+
 	facebook: {
 		clientID: '875357199180183',
 		clientSecret: '3ee434f170563dcce4be88b454f59a27',
